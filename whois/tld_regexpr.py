@@ -259,3 +259,16 @@ br = {
     'name_servers':             r'nserver:\s*(.+)',
     'status':                   r'status:\s?(.+)',
 }
+
+
+pe = {
+    'extend': 'com',
+    'domain_name':              r'Domain Name:\s?(.+)',
+    'registrar':                'nic.pe',
+    'registrant':               None,
+    'owner':                    r'Registrant Name:\s?(.+)',
+    'creation_date':            r'created:\s?(.+)',
+    'updated_date':             r'changed:\s?(.+)',
+    'name_servers':             r'Name Server:\s*(.+)',
+    'status':                   r'Domain Status:\s?(.+)',
+}
